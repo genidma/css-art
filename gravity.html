@@ -7,13 +7,13 @@
     height: 50px;
     margin-top: 180px;
     animation-name: bounce;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
   }
   #red {
     background: red;
     left: 7%;
-    animation-timing-function: cubic-bezier(0,0,0.58,1);
+    animation-timing-function: cubic-bezier(0.11,0.44,0.58,2);
   }
   #blue {
     background: blue;
@@ -27,18 +27,38 @@
     animation-timing-function: linear;
   }
 
+  #grey {
+    background: grey;
+    left: 7%;
+    animation-timing-function: linear-reverse;
+  }
+  #green {
+    background: green;
+    left: 40%;
+    animation-timing-function: linear-reverse;
+  }
+
+  #black {
+    background: black;
+    left: 33%;
+    animation-timing-function: linear;
+  }
+
   @keyframes bounce {
     0% {
       top: 8px;
     }
     100% {
-      top: 190px;
+      top: 290px;
     }
     70% {
-      top: 199px;
+      top: 409px;
     }
   }
 </style>
 <div class="balls" id= "red"></div>
 <div class="balls" id= "blue"></div>
 <div class="balls" id= "orange"></div>
+<div class="balls" id= "grey"></div>
+<div class="balls" id= "green"></div>
+<div class="balls" id= "black"></div>
